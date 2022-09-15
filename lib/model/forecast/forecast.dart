@@ -1,9 +1,11 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:weather_app/model/weather/weather.dart';
 
+//part keyword denotes the files to be generated with the build_runner package
 part 'forecast.freezed.dart';
 part 'forecast.g.dart';
 
+///Generation of Immutable Forecast Class with a fromJson method using freezed
 @Freezed()
 class Forecast with _$Forecast {
   factory Forecast(

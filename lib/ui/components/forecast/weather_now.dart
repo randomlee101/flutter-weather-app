@@ -4,6 +4,7 @@ import 'package:weather_app/model/model.dart';
 import 'package:weather_app/service_locator.dart';
 import 'package:weather_app/ui/components/forecast/weather_now_card.dart';
 
+///Contains all weather information for the current time
 class WeatherNow extends StatelessWidget {
   WeatherNow({Key? key}) : super(key: key);
 

@@ -4,6 +4,7 @@ import 'package:weather_app/logic/logic.dart';
 import 'package:weather_app/model/model.dart';
 import 'package:weather_app/service_locator.dart';
 
+///Contains an overview for the current weather
 class WeatherOverview extends StatelessWidget {
   WeatherOverview({Key? key}) : super(key: key);
 

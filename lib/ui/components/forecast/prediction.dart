@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:weather_app/logic/logic.dart';
 import 'package:weather_app/model/forecast/forecast.dart';
 
+///Re-usable component for showing summarized weather information for subsequent days in a 7-days span of forecast
 class Prediction extends StatelessWidget {
   const Prediction({Key? key, this.forecast}) : super(key: key);
 

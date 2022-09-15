@@ -4,8 +4,10 @@ import 'package:weather_app/logic/weather_forecast/weather_forecast_logic.dart';
 import 'package:weather_app/service_locator.dart';
 import 'package:weather_app/ui/screens/home/home.dart';
 
+///Entry-point for the application
 void main()
 {
+  //initialization of all registered bloc classes available in the serviceLocator method
   serviceLocator();
   runApp(const MyApp());
 }

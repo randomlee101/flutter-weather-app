@@ -4,6 +4,8 @@ import 'package:weather_app/ui/components/home/home_sliver_app_bar_clipper.dart'
 import 'weather_overview.dart';
 import 'weather_overview_header.dart';
 
+///A Custom Sliver AppBar to reveal adequate information on the home page
+///While giving enough screen real estate for scrolling
 class CustomSliverAppBar extends SliverPersistentHeaderDelegate {
   CustomSliverAppBar({this.expandedHeight});
 
@@ -51,7 +53,7 @@ class CustomSliverAppBar extends SliverPersistentHeaderDelegate {
 
   @override
   // TODO: implement minExtent
-  double get minExtent => (kToolbarHeight * 2);
+  double get minExtent => (kToolbarHeight * 2.5);
 
   @override
   bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) {

@@ -5,6 +5,7 @@ import 'package:weather_app/model/forecast/forecast.dart';
 import 'package:weather_app/service_locator.dart';
 import 'package:weather_app/ui/components/components.dart';
 
+///Stateless Widget Returning The Home Page of The Application
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
 

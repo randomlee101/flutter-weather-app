@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+///A CustomClipper to shape out the header border for the HomeSliverAppBar
 class HomeSliverAppBarClipper extends CustomClipper<Path> {
   @override
   getClip(Size size) {

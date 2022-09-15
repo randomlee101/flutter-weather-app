@@ -5,6 +5,7 @@ import 'package:weather_app/logic/weather_forecast/weather_forecast_bloc.dart';
 import 'package:weather_app/model/forecast/forecast.dart';
 import 'package:weather_app/service_locator.dart';
 
+///A persistent appbar intended to reveal the current location, date and time
 class WeatherOverviewHeader extends StatelessWidget {
   WeatherOverviewHeader({Key? key}) : super(key: key);
 

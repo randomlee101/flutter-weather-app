@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+///A component create for re-usability in the WeatherNow widget
 class WeatherNowCard extends StatelessWidget {
   const WeatherNowCard({Key? key, this.label, this.value, this.icon}) : super(key: key);
 
