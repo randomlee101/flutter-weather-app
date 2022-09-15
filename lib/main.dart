@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:weather_app/logic/weather_forecast/weather_forecast_logic.dart';
+import 'package:weather_app/service_locator.dart';
 import 'package:weather_app/ui/screens/home/home.dart';
 
 void main()
 {
+  serviceLocator();
   runApp(const MyApp());
 }
 
@@ -11,8 +15,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      WeatherForecastRequest weatherForecastRequest = WeatherForecastRequest();
+      weatherForecastRequest.fetchDailyWeatherInfo();
+    });
+    return MaterialApp(
       home: Home(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.light().copyWith(
+        textTheme: GoogleFonts.macondoTextTheme(ThemeData.light().textTheme)
+      )
     );
   }
 }
